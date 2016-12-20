@@ -4,7 +4,9 @@
   "manifest_version": 2,
   "description": "http://www.loadfield.com/",
   "permissions": [
-    "storage"
+    "storage",
+    "http://*/*",
+    "https://*/*"
   ],
   "content_scripts": [{
     "js": [ "dxjc.js" ],
