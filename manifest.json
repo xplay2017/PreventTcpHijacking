@@ -1,0 +1,21 @@
+﻿{
+  "name": "防止电信运营商TCP劫持",
+  "version": "1.0.1",
+  "manifest_version": 2,
+  "description": "http://www.loadfield.com/",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [{
+    "js": [ "dxjc.js" ],
+    "matches": [ "http://*/*"],
+    "run_at": "document_end"
+  }],
+  "icons": {
+    "48": "logo_avatar.png"
+  },
+  "browser_action": { 
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
