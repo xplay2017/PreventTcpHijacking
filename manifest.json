@@ -8,7 +8,7 @@
     "http://*/*"
   ],
   "content_scripts": [{
-    "js": [ "dxjc.js" ],
+    "js": [ "pth.js" ],
     "matches": [ "http://*/*"],
     "run_at": "document_end"
   }],
