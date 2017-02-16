@@ -59,7 +59,7 @@ if (document.title == ""){ // 检查标题是否为空, 被劫持标题一般都
         top.location.href = url;
         // 保存被运营商劫持的次数.
         if (window.localStorage){
-          var num = localStorage['num'];
+          var num = parseInt(localStorage['num']);
           if (!num){
             num = 0;
           }

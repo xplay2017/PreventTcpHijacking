@@ -1,7 +1,7 @@
 if (window.localStorage){
   chrome.storage.sync.get("num",function(data){
     var num = document.getElementById("num");
-    if (parseInt(num) > 0){
+    if (parseInt(data['num']) > 0){
       num.innerHTML = "你被嘿嘿嘿了" + data['num'] + "次.";
     }else{
       num.innerHTML = "你的浏览器还是纯洁的.";
